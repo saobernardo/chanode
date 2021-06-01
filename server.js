@@ -16,6 +16,7 @@ let connectedUsers = [];
 //cada nova conexão irá rodar o que está na função
 //Todo on é um listener
 io.on('connection', (socket) => {
+    console.log('Conexão estabelecida');
     socket.on('join-request', (username) => {
         socket.username = username;
         connectedUsers.push(username);
