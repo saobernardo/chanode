@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
 }
@@ -9,7 +10,6 @@ ul, li{
 }
 
 .page{
-    display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -17,12 +17,13 @@ ul, li{
 }
 
 #loginPage{
-    display: flex;
+    display: none;
     background-color: #FFF;
 }
+
 #loginNameInput{
-    border: 2px solid #000;
-    background-color: #CCC;
+    border:2px solid #000;
+    background-color: #ccc;
     font-size: 18px;
     padding: 10px;
     border-radius: 5px;
@@ -38,13 +39,13 @@ ul, li{
 .chatArea{
     flex: 1;
     width: 100%;
-    display: none;
-    background-color: beige;
+    display: flex;
+    background-color: bisque;
 }
 
 .chatList{
     flex: 1;
-    background-color: coral;
+    background-color: #FFF;
     overflow-y: scroll;
     max-height: calc(100vh - 40px);
 }
@@ -52,16 +53,18 @@ ul, li{
     padding: 3px;
     font-size: 15px;
 }
+/*Mensagem de status vinda do server*/
 .chatList li.m-status{
     color: #333;
     font-style: italic;
 }
+/*Nome do usuário no chat*/
 .chatList li.m-txt span{
     font-weight: bold;
-    color: #0000FF;
+    color:cadetblue;
 }
 .chatList li.m-txt span.me{
-    color: #FF0000;
+    color:cornflowerblue;
 }
 
 .userList{
@@ -71,16 +74,22 @@ ul, li{
     max-height: calc(100vh - 40px);
 }
 
+.userList li{
+    padding: 5px;
+    font-size: 15px;
+}
+
 .chatInput{
     width: 100%;
     display: flex;
 }
+
 #chatTextInput{
     flex: 1;
     height: 40px;
     padding: 0 10px;
     font-size: 15px;
-    background-color: #FFF;
+    background-color: blanchedalmond;
     outline: 0;
     border: 0;
 }

@@ -8,12 +8,14 @@ let chatPage = document.querySelector('#chatPage');
 let loginInput = document.querySelector('#loginNameInput');
 let textInput = document.querySelector('#chatTextInput');
 
-loginPage.style.display = 'flex';
-chatPage.style.display = 'none';
+//loginPage.style.display = 'flex';
+//chatPage.style.display = 'none';
 
 function renderUserList(){}
 
-loginInput.addEventListener('keyup', (e) => {
+//Evento por apertada de tecla
+/*loginInput.addEventListener('keyup', (e) => {
+    //se a tecla pressionada for Enter
     if(e.keyCode === 13){
         let name = loginInput.value.trim();
         if(name != ''){
@@ -33,4 +35,4 @@ socket.on('user-ok', (list) => {
 
     userList = list;
     renderUserList();
-});
+});*/

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,34 +9,27 @@
 </head>
 <body>
     <div class="page" id="loginPage">
-        <h1>Qual seu nome?</h1>
-        <input type="text" id="loginNameInput" /> 
+        <h1>Qual é seu nome?</h1>
+        <input type="text" id="loginNameInput" />
     </div>
-
+    
     <div class="page" id="chatPage">
         <div class="chatArea">
             <ul class="chatList">
-                <!--<li class="m-status">Fulano entrou na sala</li>
-                <li class="m-status">Fulano saiu na sala</li>
-                <li class="m-txt"><span class="me">Lucas:</span> Opa!</li>-->
+                <li class="m-status">Fulano entrou na sala</li>
+                <li class="m-txt"><span class="me">Lucas: </span>Olá, meus amores! S2</li>
+                <li class="m-txt"><span>Brandão: </span>Olá, meu galinácio engordurado!</li>
             </ul>
             <ul class="userList">
-                <li>Lucas</li>
+                <li>Lucas (você)</li>
                 <li>Ariston</li>
                 <li>Cleiton</li>
-                <li>Felipe</li>
-                <li>Ricardo</li>
-                <li>Vinícius</li>
-                
             </ul>
         </div>
 
         <div class="chatInput">
-            <input type="text" id="chatTextInput" placeholder="Digite uma mensagem (e aperte Enter)"/>
+            <input type="text" id="chatTextInput" placeholder="Digite uma mensagem (Pressione Enter para enviar)" />
         </div>
     </div>
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="main.js"></script>
 </body>
 </html>
